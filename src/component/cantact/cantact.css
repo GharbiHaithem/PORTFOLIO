@@ -1,0 +1,64 @@
+.container__cantact{
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap:2rem;
+}
+.cantact__option{
+    background: var(--color-bg-variant);
+    border:1px solid var(--color-light);
+    padding:1.3rem;
+    text-align: center;
+    border-radius: 1.3rem;
+    transition: var(--transition);
+}
+.cantact__options{
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+}
+.cantact__option:hover{
+    background: transparent;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem
+}
+input,textarea{
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+    color: var(--color-light);
+}
+#cantact{
+    height: 150vh;
+}
+@media screen and (max-width:1024px) {
+    .container__cantact{
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+    #cantact{
+        height: 180vh;
+    }
+}
+@media screen and (max-width:600px) {
+    .container__cantact{
+        width: 70%;
+    }
+}
+.cantact_icon{
+    font-size: large;
+    margin-bottom: 0.5rem;
+    color:var(--color-primary-variant)
+}
+a{
+    color: var(--color-primary-variant);
+
+    font-weight: 900;
+}
+h4,h5{
+    margin: 0.3rem;
+}
