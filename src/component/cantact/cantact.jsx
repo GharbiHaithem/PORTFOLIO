@@ -10,7 +10,7 @@ import { modalConstant } from '../../redux/action';
  const Cantact = () => {
   const form = useRef();
  const dispatch=useDispatch()
-
+const[email,setEmail]=useState('')
        
   
   const sendEmail=(e)=>{
