@@ -1,0 +1,83 @@
+.settings{
+      background: rgba(0, 0, 0, 0.3);
+      width: max-content;
+      display: block;
+      padding: 0.7rem 1.7rem;
+      z-index: 2;
+      position: fixed;
+      right: 10px;
+     
+      bottom: 2rem;
+      display: flex;
+      gap: 1.8rem;
+      border-radius: 3rem;
+      backdrop-filter: blur(15px);
+      cursor: pointer;
+}
+.settings-menu{
+      position:fixed ;
+      right: -280px;
+      border-radius: 0.5rem;
+      backdrop-filter: blur(15px);
+      background: rgba(0, 0, 0, 0.3);
+      width: max-content;
+      display: block;
+      padding: 0.7rem 1.7rem;
+      z-index: 2;
+      bottom: 1.5rem;
+      height: max-content;
+}
+.settings-menu-hovered{
+      position:fixed ;
+      right: 110px;
+      border-radius: 0.5rem;
+      backdrop-filter: blur(15px);
+      background: rgba(0, 0, 0, 0.3);
+      width: max-content;
+      display: block;
+      padding: 0.7rem 1.7rem;
+      z-index: 2;
+      bottom: 1.5rem;
+      height: max-content;
+}
+.settings .x{
+      color:var(--color-primary)
+}
+.settings:hover .x{
+      color: white;
+}
+.custom-checkbox {
+      position: relative;
+      width: 5px; /* Largeur de la case à cocher */
+      height: 5px; /* Hauteur de la case à cocher */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent; /* Couleur de fond rouge */
+      border: 1px solid white; /* Bordure blanche avec une épaisseur de 4px */
+      cursor: pointer;
+      margin-right: 10px; /* Espacement à droite du texte */
+      outline: none; /* Supprime le contour par défaut */
+  }
+
+  .custom-checkbox:checked {
+      background-color: transparent; /* Couleur de fond rouge lorsque la case est cochée */
+  }
+
+  /* Agrandir la case */
+ 
+
+/* Agrandir la case */
+.custom-checkbox {
+    transform: scale(1); /* Ajustez cette valeur pour la taille souhaitée */
+}
+.custom-checkbox:checked::after {
+    content: "✓"; /* Contenu du pseudo-élément */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le contenu */
+    color: white; /* Couleur du texte */
+    font-size: 11px; /* Taille de police */
+    font-weight: bold; /* Gras */
+}

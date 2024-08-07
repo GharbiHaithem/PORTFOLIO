@@ -12,8 +12,15 @@ import Footer from './component/footer/footer'
 import Cantact from './component/cantact/cantact';
 import { useSelector } from 'react-redux';
 import Modal from './component/Modal';
+import Settings from './component/Settings/index.jsx';
+import { useEffect, useState } from 'react';
+
 function App() {
   const {modal} = useSelector(state=>state)
+  const[imgSrc,setImgSrc]=useState('')
+  useEffect(()=>{
+    document.body.style.backgroundImage=`url(${imgSrc})`
+  },[imgSrc])
   return (
     <>
     {
@@ -28,7 +35,7 @@ function App() {
     <Testimonials/>
     <Cantact />
     <Footer />
-
+  <Settings  imgSrc={imgSrc} setImgSrc={setImgSrc} />
     </>
   );
 }
