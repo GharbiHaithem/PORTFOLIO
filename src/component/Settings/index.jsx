@@ -9,7 +9,7 @@ const Settings = ({setImgSrc,imgSrc}) => {
   return (
     <>
     
-    <div className='settings' onClick={()=>setHovered(true)} >  <GiSettingsKnobs className='x' style={{fontSize:'30px' , fontWeight:'900'}} />
+    <div className='cursor-pointer settings bg-[rgba(0, 0, 0, 0.3)] p-4 w-[max-content] block backdrop-blur-lg z-50 fixed right-[15px] rounded-xl bottom-3' onClick={()=>setHovered(true)} >  <GiSettingsKnobs className='x' style={{fontSize:'30px' , fontWeight:'900'}} />
   
     </div>
      {hovered && <div style={{display:'flex' ,flexDirection:'column', gap:'10px'}} onMouseLeave={()=>setHovered(false)} className={`${hovered ? 'settings-menu-hovered' : 'settings-menu'}  `}>
